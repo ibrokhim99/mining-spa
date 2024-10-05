@@ -40,7 +40,7 @@ const Footer = () => {
       className={`bg-gradient-to-t from-[#4a4975]  to-[#FFFFFF] ${isVisible ? "animate-slideInBottom" : "opacity-0"}`}
       ref={sectionRef}>
       <div className="container mx-auto px-[18px] py-5  md:px-20 sm:py-10 ">
-        <div className="relative bg-[url('/bg2.jpg')] inset-0 bg-cover bg-center h-[300px] rounded-[30px] p-2 px-0 xl:px-64 lg:px-40 sm:px-10 sm:p-10  flex flex-col md:flex-row justify-center items-center">
+        <div className="relative bg-[url('/footer.jpg')] inset-0 bg-cover bg-center h-[300px] rounded-[30px] p-2 px-0 xl:px-64 lg:px-40 sm:px-10 sm:p-10  flex flex-col md:flex-row justify-center items-center">
           <div className="flex flex-col  text-black items-center md:ml-20 md:text-left ">
             <h2 className="mb-1 sm:mb-5 text-xl  xl:text-3xl text-shadow-xl  font-bold text-center ">
               Boost Confidence with Realistic Mock Tests
@@ -58,9 +58,9 @@ const Footer = () => {
             <span className="text-white font-bold text-3xl">
               <span>
                 <span className="bg-gradient-to-t from-[#4a4975]  to-[#FFFFFF] rounded-full text-black">
-                  C
+                  N
                 </span>
-                <span>S</span>
+                <span>eruda.uz</span>
               </span>
             </span>
           </div>
