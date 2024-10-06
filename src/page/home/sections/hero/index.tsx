@@ -25,7 +25,9 @@ export const HeroSection = ({ id }: Props) => {
       <div className="absolute inset-0  bg-cover bg-center bg-[url('/bg4.jpeg')] filter opacity-90 "></div>
       <div className="container mx-auto text-center flex flex-row items-center justify-center px-[18px] lg:px-20 relative z-10">
         <h1 className="text-2xl md:text-4xl font-bold   text-white text-center animate-slideInTop text-shadow shadow-white">
-          Crashed Stones
+          Sheben <br /> Va
+          <br />
+          Klinets
         </h1>
       </div>
     </section>

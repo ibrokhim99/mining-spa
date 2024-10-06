@@ -40,7 +40,7 @@ export default function Component({ id }: Props) {
         <div className="text-center mb-8">
           <h2
             className={`text-3xl sm:text-5xl  ${isVisible ? "animate-slideInTop" : "opacity-0"}`}>
-            Our delivery truck
+            Bizning yetkazib beruvchi yuk mashinamiz
           </h2>
         </div>
         <div className="text-left mb-[50px] w-full flex flex-row">

@@ -2,7 +2,9 @@
 
 import BenefitsSection from "./sections/benefits"
 import FAQSection from "./sections/faq"
+import { Gallery } from "./sections/gallery"
 import { HeroSection } from "./sections/hero"
+import { Partners } from "./sections/partners"
 import { PricingSection } from "./sections/pricing"
 import { TrustedSection } from "./sections/trusted"
 import Footer from "@/layouts/footer/footer"
@@ -16,8 +18,10 @@ export const HomePageComponent = () => {
       </div>
       <HeroSection id="home" />
       <BenefitsSection />
+      <Gallery />
       <PricingSection id="pricing" />
       <TrustedSection />
+      <Partners />
       <FAQSection id="faq" />
       <Footer />
     </>

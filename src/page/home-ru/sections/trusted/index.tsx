@@ -34,40 +34,52 @@ export const TrustedSection = () => {
         <div className="text-center mb-[50px]">
           <h2
             className={`text-3xl sm:text-5xl ${isVisible ? "animate-slideInTop" : "opacity-0"}`}>
-            About us
+            О Нас
           </h2>
         </div>
         <div className="mt-12  ">
           <div className="">
             <p
               className={`text-xl font-bold ${isVisible ? "animate-slideInLeft" : "opacity-0"}`}>
-              Who we are
+              Кто мы
             </p>
             <ul
               className={`list-disc ml-5 sm:ml-10 text-md sm:text-xl space-y-2 text-gray-700 ${isVisible ? "animate-slideInLeft" : "opacity-0"}`}>
               <li>
                 <p className="text-sm md:text-xl mb-10 mt-2.5 md:mb-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry&apos;s
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  Мы считаемся надежным партнером в поставке нерудных
+                  строительных материалов. Наша команда специалистов всегда
+                  готова ответить на любые ваши вопросы. Мы внимательно
+                  относимся к отзывам и постоянно стремимся быстро улучшать наш
+                  сервис.
                 </p>
               </li>
             </ul>
             <p
               className={`text-xl font-bold mt-5 ${isVisible ? "animate-slideInLeft" : "opacity-0"}`}>
-              Our service
+              Наши услуги
             </p>
             <ul
               className={`list-disc ml-5 sm:ml-10 text-md sm:text-xl space-y-2 text-gray-700 ${isVisible ? "animate-slideInLeft" : "opacity-0"}`}>
               <li>
+                <h3 className="mt-2.5 font-semibold">Добыча материалов:</h3>
                 <p className="text-sm md:text-xl mb-10 mt-2.5 md:mb-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry&apos;s
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  Процесс производства нерудных строительных материалов
+                  начинается с изучения территории, где будет происходить
+                  добыча. После извлечения сырья оно отправляется на завод, где
+                  проходит несколько этапов переработки, чтобы обеспечить вам
+                  получение высококачественного конечного продукта.
+                </p>
+              </li>
+              <li>
+                <h3 className="mt-2.5 font-semibold">Доставка материалов:</h3>
+                <p className="text-sm md:text-xl mb-10 mt-2.5 md:mb-0">
+                  Мы осуществляем доставку нерудных материалов по Ташкенту и его
+                  окрестностям. Наша задача — обеспечить клиентов постоянным
+                  снабжением высококачественными материалами в любом необходимом
+                  объеме. Все наши продукты соответствуют стандартам ГОСТ и
+                  проходят тщательную проверку качества с нашей стороны,
+                  независимо от размера заказа.
                 </p>
               </li>
             </ul>

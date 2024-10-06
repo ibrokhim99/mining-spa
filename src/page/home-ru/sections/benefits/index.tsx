@@ -45,7 +45,7 @@ export default function IeltsMockSection() {
             <div
               className={`w-1/2 flex items-center justify-center ${isVisible ? "animate-slideInLeft" : "opacity-0"}`}>
               <Image
-                src="/car.webp"
+                src="/car2.png"
                 alt="Person using laptop"
                 layout="fill"
                 objectFit="cover"
@@ -63,23 +63,16 @@ export default function IeltsMockSection() {
                   </div>
                   <p className="text-2xl sm:text-3xl font-semibold pl-3 sm:pl-5">
                     {" "}
-                    Better writing, better results
+                    Доставка до вашего объекта.
                   </p>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 sm:ml-10 text-md sm:text-xl space-y-2 text-gray-700">
                     <li>
-                      Be perfectly professional, clear, and convincing in a few
-                      clicks, not a few hours.
+                      Мы предоставляем услугу доставки грузов на ваш объект.
                     </li>
-                    <li>
-                      Get personalized suggestions based on what you’re writing
-                      and who will read it.
-                    </li>
-                    <li>
-                      Get personalized suggestions based on what you’re writing
-                      and who will read it.
-                    </li>
+                    <li>В нашем автопарке есть разнообразная техника</li>
+                    <li>подходящая для перевозки любых грузов.</li>
                   </ul>
                 </div>
               </div>
@@ -94,22 +87,18 @@ export default function IeltsMockSection() {
                     <CloudRainWind className="w-[20px] h-[20px] sm:w-[30px] sm:h-[30px]" />
                   </div>
                   <p className="text-2xl sm:text-3xl font-semibold pl-3 sm:pl-5">
-                    Better writing, better results
+                    Доступные цены
                   </p>
                 </div>
                 <div className="flex items-start justify-start">
                   <ul className="list-disc ml-5 sm:ml-10  text-md sm:text-xl space-y-2  text-gray-700">
                     <li>
-                      Be perfectly professional, clear, and convincing in a few
-                      clicks, not a few hours.
+                      Большой опыт работы в производстве строительных материалов
                     </li>
                     <li>
-                      Get personalized suggestions based on what you’re writing
-                      and who will read it.
-                    </li>
-                    <li>
-                      Get personalized suggestions based on what you’re writing
-                      and who will read it.
+                      Многолетний опыт в производстве строительных материалов
+                      позволяет нам оптимизировать процесс, снижая затраты
+                      времени и ресурсов.
                     </li>
                   </ul>
                 </div>
@@ -118,7 +107,7 @@ export default function IeltsMockSection() {
             <div
               className={`w-1/2 flex items-center justify-center  ${isVisible ? "animate-slideInRight" : "opacity-0"}`}>
               <Image
-                src="/car.jpg"
+                src="/car3.png"
                 alt="Person using laptop"
                 layout="fill"
                 objectFit="cover"

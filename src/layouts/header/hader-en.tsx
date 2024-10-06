@@ -26,15 +26,21 @@ export const LandingHeaderEn = () => {
               <span className="bg-gradient-to-t from-[#4a4975]  to-[#FFFFFF] rounded-full text-black">
                 N
               </span>{" "}
-              <span>E</span>
+              <span className="text-sm">eruda.uz</span>
             </span>
           </Link>
         </div>
         <nav className="flex space-x-4 text-sm text-white">
-          <Link href="#home">Advantage</Link>
-          <Link href="#pricing">Products</Link>
-          <Link href="#module">Contacts</Link>
-          <Link href="#module">{"+998 (90) 187-69-08"}</Link>
+          <Link href="#home" className="hidden sm:flex">
+            Advantage
+          </Link>
+          <Link href="#pricing" className="hidden sm:flex">
+            Products
+          </Link>
+          <Link href="#module" className="hidden sm:flex">
+            Contacts
+          </Link>
+          <Link href="tel:+998901876808">{"+998 (90) 187-68-08"}</Link>
         </nav>
         <div className="flex flex-row items-center space-x-8">
           <Select

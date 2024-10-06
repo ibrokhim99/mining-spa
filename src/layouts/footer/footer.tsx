@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 
+import { Placemark, YMaps } from "@pbe/react-yandex-maps"
+import { Map } from "@pbe/react-yandex-maps"
 import { Call } from "iconsax-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -36,54 +38,46 @@ const Footer = () => {
     }
   }, [])
   return (
-    <footer
-      className={`bg-gradient-to-t from-[#4a4975]  to-[#FFFFFF] ${isVisible ? "animate-slideInBottom" : "opacity-0"}`}
-      ref={sectionRef}>
-      <div className="container mx-auto px-[18px] py-5  md:px-20 sm:py-10 ">
-        <div className="relative bg-[url('/footer.jpg')] inset-0 bg-cover bg-center h-[300px] rounded-[30px] p-2 px-0 xl:px-64 lg:px-40 sm:px-10 sm:p-10  flex flex-col md:flex-row justify-center items-center">
-          <div className="flex flex-col  text-black items-center md:ml-20 md:text-left ">
-            <h2 className="mb-1 sm:mb-5 text-xl  xl:text-3xl text-shadow-xl  font-bold text-center ">
-              Boost Confidence with Realistic Mock Tests
-            </h2>
-            <p className="mb-2 sm:mb-5 text-center text-shadow-xl text-md lg:text-lg font-extralight">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s standard dummy
-              <br /> text ever since the 1500s
-            </p>
+    <YMaps>
+      <footer
+        className={`bg-gradient-to-t from-[#4a4975]  to-[#FFFFFF] ${isVisible ? "animate-slideInBottom" : "opacity-0"}`}
+        ref={sectionRef}>
+        <div className="container mx-auto px-[18px] py-5  md:px-20 sm:py-10 ">
+          <div className="h-[300px]   flex justify-center items-center">
+            <div className="w-full h-full rounded-[30px] overflow-hidden">
+              <Map
+                defaultState={{ center: [41.2995, 69.2401], zoom: 15 }}
+                width="100%"
+                height="100%">
+                <Placemark geometry={[41.2995, 69.2401]} />
+              </Map>
+            </div>
           </div>
-        </div>
 
-        <div className="mt-9 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-          <div className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-5 mb-6 md:mb-0">
-            <span className="text-white font-bold text-3xl">
-              <span>
-                <span className="bg-gradient-to-t from-[#4a4975]  to-[#FFFFFF] rounded-full text-black">
-                  N
+          <div className="mt-9 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-5 mb-6 md:mb-0">
+              <span className="text-white font-bold text-3xl">
+                <span>
+                  <span className="bg-gradient-to-t from-[#4a4975]  to-[#FFFFFF] rounded-full text-black">
+                    N
+                  </span>
+                  <span>eruda.uz</span>
                 </span>
-                <span>eruda.uz</span>
               </span>
-            </span>
-          </div>
+            </div>
 
-          <nav className="flex space-x-10  pb-2 sm:pb-0 text-gray-900">
-            <Link href="#" className="hover:text-gray-500  ">
-              Home
-            </Link>
-            <Link href="#pricing" className="hover:text-gray-500 ">
-              Pruducts
-            </Link>
-            <Link href="#faq" className="hover:text-gray-500 ">
-              FAQ
-            </Link>
-          </nav>
+            <nav className="flex space-x-10  pb-2 sm:pb-0 text-gray-900">
+              Toshkent shaxar, Yunusboad tumani,Farog`at 3-tor, 20-uy
+            </nav>
 
-          <div className="flex items-center space-x-2   text-gray-900">
-            <Call />
-            <span>+998 99 933 08 05</span>
+            <div className="flex items-center space-x-2   text-gray-900">
+              <Call />
+              <span>+998 99 832 67 89</span>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </YMaps>
   )
 }
 

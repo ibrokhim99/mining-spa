@@ -41,39 +41,45 @@ export const PricingSection = ({ id }: Props) => {
       <div className="container mx-auto px-[18px] flex flex-col items-center justify-center  lg:px-20">
         <div
           className={`text-center mb-[50px] ${isVisible ? "animate-slideInTop" : "opacity-0"}`}>
-          <h2 className="text-3xl sm:text-5xl">Products</h2>
+          <h2 className="text-3xl sm:text-5xl">Maxsulotlar</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
           <Card
             className={`transition-transform duration-600  p-5 ${isVisible ? "animate-slideInLeft" : "opacity-0"} hover:scale-125 `}>
             <div className="flex flex-col items-center">
               <Image
-                src="/prod1.jpg"
+                src="/sheb.jpg"
                 alt="Product 1"
                 width={500}
                 height={400}
                 className="mb-4 rounded-lg"
               />
               <p className="text-center text-lg font-semibold">
-                Crushed stone (40-70 mm)
+                Klines (01-08 mm)
               </p>
-              <p className="text-center text-sm ">Price: 130 000 sum / м</p>
+              <p className="text-center text-sm ">Narxi: 135 000 so`m dan</p>
+              <p className="text-center text-sm text-gray-400 ">
+                Narxilar yetkazib berish xizmati hisobga olmagan{" "}
+              </p>
             </div>
           </Card>
           <Card
             className={`transition-transform duration-600 hover:scale-125 p-5 ${isVisible ? "animate-slideInRight" : "opacity-0"}`}>
             <div className="flex flex-col items-center">
               <Image
-                src="/prod1.jpg"
+                src="/clint.jpeg"
                 alt="Product 2"
                 width={500}
                 height={400}
                 className="mb-4 rounded-lg"
               />
               <p className="text-center text-lg font-semibold">
-                Crushed stone (40-70 mm)
+                Sheben (08-22 mm)
               </p>
-              <p className="text-center text-sm ">Price: 130 000 sum / м</p>
+              <p className="text-center text-sm ">Narxi: 80 000 so`m dan </p>
+              <p className="text-center text-sm text-gray-400 ">
+                Narxilar yetkazib berish xizmati hisobga olmagan{" "}
+              </p>
             </div>
           </Card>
         </div>

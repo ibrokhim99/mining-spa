@@ -26,27 +26,33 @@ export const LandingHeader = () => {
               <span className="bg-gradient-to-t from-[#4a4975]  to-[#FFFFFF] rounded-full text-black">
                 N
               </span>{" "}
-              <span>E</span>
+              <span className="text-sm">eruda.uz</span>
             </span>
           </Link>
         </div>
         <nav className="flex space-x-4 text-sm text-white">
-          <Link href="#home">Advantage</Link>
-          <Link href="#pricing">Products</Link>
-          <Link href="#module">Contacts</Link>
-          <Link href="#module">{"+998 (90) 187-68-08"}</Link>
+          <Link href="#home" className="hidden sm:flex">
+            Afzalliklar
+          </Link>
+          <Link href="#pricing" className="hidden sm:flex">
+            Maxsulotlar
+          </Link>
+          <Link href="#module" className="hidden sm:flex">
+            Aloqa
+          </Link>
+          <Link href="tel:+998901876808">{"+998 (90) 187-68-08"}</Link>
         </nav>
         <div className="flex flex-row items-center space-x-8">
           <Select
             defaultValue="uz"
             onValueChange={(value) => router.push(`/${value}`)}>
-            <SelectTrigger className="text-white">
+            <SelectTrigger className="text-white border-none">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="uz">uz</SelectItem>
-              <SelectItem value="ru">ru</SelectItem>
-              <SelectItem value="en">en</SelectItem>
+              <SelectItem value="uz">UZ</SelectItem>
+              <SelectItem value="ru">RU</SelectItem>
+              <SelectItem value="en">EN</SelectItem>
             </SelectContent>
           </Select>
         </div>
