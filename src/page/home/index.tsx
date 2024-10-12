@@ -16,14 +16,14 @@ export const HomePageComponent = () => {
       <div className="bg-[#E0E7FE]">
         <LandingHeader />
       </div>
-      <HeroSection id="home" />
-      <BenefitsSection />
+      <HeroSection />
+      <BenefitsSection id="home" />
       <Gallery />
       <PricingSection id="pricing" />
       <TrustedSection />
       <Partners />
       <FAQSection id="faq" />
-      <Footer />
+      <Footer id="module" />
     </>
   )
 }

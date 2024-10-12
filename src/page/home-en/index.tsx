@@ -1,5 +1,8 @@
 "use client"
 
+import { Gallery } from "../home/sections/gallery"
+import { Partners } from "../home/sections/partners"
+
 import BenefitsSection from "./sections/benefits"
 import FAQSection from "./sections/faq"
 import { HeroSection } from "./sections/hero"
@@ -16,10 +19,12 @@ export const HomeEnPageComponent = () => {
       </div>
       <HeroSection id="home" />
       <BenefitsSection />
+      <Gallery />
       <PricingSection id="pricing" />
       <TrustedSection />
+      <Partners />
       <FAQSection id="faq" />
-      <Footer />
+      <Footer id="module" />
     </>
   )
 }

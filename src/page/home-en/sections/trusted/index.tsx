@@ -29,7 +29,7 @@ export const TrustedSection = () => {
     }
   }, [])
   return (
-    <section className="py-40 mb-10 mt-8" ref={sectionRef}>
+    <section className="py-40 pb-0  mt-8" ref={sectionRef}>
       <div className="container mx-auto px-[16px]  lg:px-20">
         <div className="text-center mb-[50px]">
           <h2
@@ -87,6 +87,12 @@ export const TrustedSection = () => {
               </li>
             </ul>
           </div>
+        </div>
+        <div className="text-center mt-[100px]">
+          <h2
+            className={`text-3xl sm:text-5xl ${isVisible ? "animate-slideInTop" : "opacity-0"}`}>
+            Our partners
+          </h2>
         </div>
       </div>
     </section>

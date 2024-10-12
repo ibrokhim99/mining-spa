@@ -3,7 +3,11 @@ import { useEffect, useRef, useState } from "react"
 import { CloudRainWind, Pickaxe } from "lucide-react"
 import Image from "next/image"
 
-export default function IeltsMockSection() {
+type IProps = {
+  id: string
+}
+
+export default function IeltsMockSection({ id }: IProps) {
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
 
@@ -32,7 +36,7 @@ export default function IeltsMockSection() {
     }
   }, [])
   return (
-    <section className="py-40 mb-10 mt-8" ref={sectionRef}>
+    <section id={id} className="py-40 mb-10 mt-8" ref={sectionRef}>
       <div className="container mx-auto px-[18px] lg:px-20  flex flex-col items-cneter justify-start h-full">
         <div className="text-center mb-[50px]">
           <h2
@@ -90,7 +94,7 @@ export default function IeltsMockSection() {
                     <CloudRainWind className="w-[20px] h-[20px] sm:w-[30px] sm:h-[30px]" />
                   </div>
                   <p className="text-2xl sm:text-3xl font-semibold pl-3 sm:pl-5">
-                    Arzon narxlar
+                    Eng arzon narxlar
                   </p>
                 </div>
                 <div className="flex items-start justify-start">

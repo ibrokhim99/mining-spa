@@ -47,7 +47,7 @@ export default function Component({ id }: Props) {
           <div
             className={`w-1/2  flex  flex-col items-center justify-center  ${isVisible ? "animate-slideInLeft" : "opacity-0"}`}>
             <h2 className="text-3xl sm:text-5xl text-[#4a4975] ">Truck Howo</h2>
-            <p className="text-sm mt-4">Грузоподъёмность - 20 кубов</p>
+            <p className="text-sm mt-4">Yuk hajmi- 20 кубов</p>
           </div>
 
           <div

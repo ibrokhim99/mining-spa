@@ -64,19 +64,19 @@ export const TrustedSection = () => {
               className={`list-disc ml-5 sm:ml-10 text-md sm:text-xl space-y-2 text-gray-700 ${isVisible ? "animate-slideInLeft" : "opacity-0"}`}>
               <li>
                 <h3 className="mt-2.5 font-semibold">
-                  Nerudli materiallarni qazib olish:
+                  Materiallarni qazib olish:
                 </h3>
                 <p className="text-sm md:text-xl mb-10 mt-2.5 md:mb-0 ml-2">
-                  Nerudli qurilish materiallarini ishlab chiqarish jarayoni
-                  qazib olish uchun mo‘ljallangan joyni o‘rganishdan boshlanadi.
-                  Xom ashyo olingandan so‘ng, u zavga jo‘natiladi va turli qayta
-                  ishlash bosqichlaridan o‘tadi, bu orqali siz sifatli tayyor
-                  mahsulotni olasiz.
+                  qurilish materiallarini ishlab chiqarish jarayoni qazib olish
+                  uchun mo‘ljallangan joyni o‘rganishdan boshlanadi. Xom ashyo
+                  olingandan so‘ng, u zavga jo‘natiladi va turli qayta ishlash
+                  bosqichlaridan o‘tadi, bu orqali siz sifatli tayyor mahsulotni
+                  olasiz.
                 </p>
               </li>
               <li>
                 <h3 className="mt-2.5 font-semibold">
-                  Nerudli materiallarni yetkazib berish:
+                  Materiallarni yetkazib berish:
                 </h3>
                 <p className="text-sm md:text-xl mb-10 mt-2.5 md:mb-0 ml-2">
                   Biz Toshkent va uning atrofida nerudli materiallarni yetkazib

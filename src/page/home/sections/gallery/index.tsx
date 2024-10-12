@@ -23,7 +23,7 @@ export const Gallery = () => (
                 src={item.logo}
                 alt="motion"
                 layout="fill"
-                objectFit="cover"
+                objectFit="contain"
               />
             </div>
           </motion.div>

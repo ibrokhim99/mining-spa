@@ -87,7 +87,7 @@ export default function IeltsMockSection() {
                     <CloudRainWind className="w-[20px] h-[20px] sm:w-[30px] sm:h-[30px]" />
                   </div>
                   <p className="text-2xl sm:text-3xl font-semibold pl-3 sm:pl-5">
-                    Доступные цены
+                    Самые Доступные цены
                   </p>
                 </div>
                 <div className="flex items-start justify-start">

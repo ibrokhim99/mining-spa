@@ -46,34 +46,48 @@ export const PricingSection = ({ id }: Props) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
           <Card
             className={`transition-transform duration-600  p-5 ${isVisible ? "animate-slideInLeft" : "opacity-0"} hover:scale-125 `}>
-            <div className="flex flex-col items-center">
-              <Image
-                src="/prod1.jpg"
-                alt="Product 1"
-                width={500}
-                height={400}
-                className="mb-4 rounded-lg"
-              />
+            <div className="flex flex-col items-center ">
+              <div className="max-h-[400px]">
+                <Image
+                  src="/klinets.png"
+                  alt="Product 1"
+                  className="mb-4 rounded-lg"
+                  width={500}
+                  height={100}
+                />
+              </div>
+
               <p className="text-center text-lg font-semibold">
-                Crushed stone (40-70 mm)
+                Klines (0.1-0.8 mm)
               </p>
-              <p className="text-center text-sm ">Price: 130 000 sum / м</p>
+              <p className="text-center text-sm ">
+                Price: from 135 000 sum (including VAT)
+              </p>
+              <p className="text-center text-sm text-gray-400 ">
+                Prices do not include delivery.
+              </p>
             </div>
           </Card>
           <Card
             className={`transition-transform duration-600 hover:scale-125 p-5 ${isVisible ? "animate-slideInRight" : "opacity-0"}`}>
             <div className="flex flex-col items-center">
               <Image
-                src="/prod1.jpg"
+                src="/prod1.png"
                 alt="Product 2"
                 width={500}
                 height={400}
-                className="mb-4 rounded-lg"
+                className="mb-4 rounded-lg pb-[70px]"
               />
+
               <p className="text-center text-lg font-semibold">
-                Crushed stone (40-70 mm)
+                Crashed Stones (0.8-0.22 mm)
               </p>
-              <p className="text-center text-sm ">Price: 130 000 sum / м</p>
+              <p className="text-center text-sm ">
+                Price: from 80,000 soums (including VAT).
+              </p>
+              <p className="text-center text-sm text-gray-400 ">
+                Prices do not include delivery.
+              </p>
             </div>
           </Card>
         </div>

@@ -18,19 +18,17 @@ export const LandingHeader = () => {
   console.log(params)
 
   return (
-    <header className="shadow-xl  rounded-b-[36px] xl:rounded-none fixed w-full top-0 z-50 bg-black bg-opacity-90 ">
+    <header className="shadow-xl  rounded-b-[36px] xl:rounded-none fixed w-full top-0 z-50 bg-gradient-to-b from-[#4a4975]  to-[#FFFFFF] bg-opacity-90 ">
       <div className="container mx-auto flex items-center justify-between px-[18px] py-5 md:px-20">
         <div className="text-2xl text-white font-bold sm:text-3xl">
           <Link href="/">
             <span>
-              <span className="bg-gradient-to-t from-[#4a4975]  to-[#FFFFFF] rounded-full text-black">
-                N
-              </span>{" "}
+              <span className="text-black">N</span>
               <span className="text-sm">eruda.uz</span>
             </span>
           </Link>
         </div>
-        <nav className="flex space-x-4 text-sm text-white">
+        <nav className="flex space-x-4 text-sm text-black">
           <Link href="#home" className="hidden sm:flex">
             Afzalliklar
           </Link>
@@ -40,13 +38,13 @@ export const LandingHeader = () => {
           <Link href="#module" className="hidden sm:flex">
             Aloqa
           </Link>
-          <Link href="tel:+998901876808">{"+998 (90) 187-68-08"}</Link>
+          <Link href="tel:+998909423499">{"+998 (90) 942-34-99"}</Link>
         </nav>
         <div className="flex flex-row items-center space-x-8">
           <Select
             defaultValue="uz"
             onValueChange={(value) => router.push(`/${value}`)}>
-            <SelectTrigger className="text-white border-none">
+            <SelectTrigger className="text-black border-none">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>

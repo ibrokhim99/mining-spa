@@ -4,21 +4,21 @@ type Props = {
 
 export const partners: Props = [
   {
-    logo: "/car3.png",
+    logo: "/part.jpg",
   },
   {
-    logo: "/car7.png",
+    logo: "/part2.png",
   },
   {
-    logo: "/car8.png",
+    logo: "/part3.png",
   },
   {
-    logo: "/car9.png",
+    logo: "/part.jpg",
   },
   {
-    logo: "/car10.png",
+    logo: "/part2.png",
   },
   {
-    logo: "/car2.png",
+    logo: "/part3.png",
   },
 ]

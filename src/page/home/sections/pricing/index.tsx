@@ -46,18 +46,23 @@ export const PricingSection = ({ id }: Props) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
           <Card
             className={`transition-transform duration-600  p-5 ${isVisible ? "animate-slideInLeft" : "opacity-0"} hover:scale-125 `}>
-            <div className="flex flex-col items-center">
-              <Image
-                src="/sheb.jpg"
-                alt="Product 1"
-                width={500}
-                height={400}
-                className="mb-4 rounded-lg"
-              />
+            <div className="flex flex-col items-center ">
+              <div className="max-h-[400px]">
+                <Image
+                  src="/klinets.png"
+                  alt="Product 1"
+                  className="mb-4 rounded-lg"
+                  width={500}
+                  height={100}
+                />
+              </div>
+
               <p className="text-center text-lg font-semibold">
-                Klines (01-08 mm)
+                Klines (0.1-0.8 mm)
               </p>
-              <p className="text-center text-sm ">Narxi: 135 000 so`m dan</p>
+              <p className="text-center text-sm ">
+                Narxi: 135 000 so`m dan(QQS bilan)
+              </p>
               <p className="text-center text-sm text-gray-400 ">
                 Narxilar yetkazib berish xizmati hisobga olmagan{" "}
               </p>
@@ -66,17 +71,21 @@ export const PricingSection = ({ id }: Props) => {
           <Card
             className={`transition-transform duration-600 hover:scale-125 p-5 ${isVisible ? "animate-slideInRight" : "opacity-0"}`}>
             <div className="flex flex-col items-center">
-              <Image
-                src="/clint.jpeg"
-                alt="Product 2"
-                width={500}
-                height={400}
-                className="mb-4 rounded-lg"
-              />
+              <div className="h-[379px]">
+                <Image
+                  src="/prod1.png"
+                  alt="Product 2"
+                  width={500}
+                  height={400}
+                  className="mb-4 rounded-lg"
+                />
+              </div>
               <p className="text-center text-lg font-semibold">
-                Sheben (08-22 mm)
+                Shag`al (0.8-0.22 mm)
               </p>
-              <p className="text-center text-sm ">Narxi: 80 000 so`m dan </p>
+              <p className="text-center text-sm ">
+                Narxi: 80 000 so`m dan (QQS bilan){" "}
+              </p>
               <p className="text-center text-sm text-gray-400 ">
                 Narxilar yetkazib berish xizmati hisobga olmagan{" "}
               </p>

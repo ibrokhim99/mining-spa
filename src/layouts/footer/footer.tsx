@@ -3,13 +3,12 @@ import { useEffect, useRef, useState } from "react"
 import { Placemark, YMaps } from "@pbe/react-yandex-maps"
 import { Map } from "@pbe/react-yandex-maps"
 import { Call } from "iconsax-react"
-import Image from "next/image"
-import Link from "next/link"
-import { useRouter } from "next/navigation"
 
-import { Button } from "@/components/ui/button"
+type IProps = {
+  id: string
+}
 
-const Footer = () => {
+const Footer = ({ id }: IProps) => {
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
 
@@ -40,16 +39,17 @@ const Footer = () => {
   return (
     <YMaps>
       <footer
+        id={id}
         className={`bg-gradient-to-t from-[#4a4975]  to-[#FFFFFF] ${isVisible ? "animate-slideInBottom" : "opacity-0"}`}
         ref={sectionRef}>
         <div className="container mx-auto px-[18px] py-5  md:px-20 sm:py-10 ">
           <div className="h-[300px]   flex justify-center items-center">
             <div className="w-full h-full rounded-[30px] overflow-hidden">
               <Map
-                defaultState={{ center: [41.2995, 69.2401], zoom: 15 }}
+                defaultState={{ center: [40.944835, 69.432272], zoom: 15 }}
                 width="100%"
                 height="100%">
-                <Placemark geometry={[41.2995, 69.2401]} />
+                <Placemark geometry={[40.944835, 69.432272]} />
               </Map>
             </div>
           </div>
@@ -67,12 +67,12 @@ const Footer = () => {
             </div>
 
             <nav className="flex space-x-10  pb-2 sm:pb-0 text-gray-900">
-              Toshkent shaxar, Yunusboad tumani,Farog`at 3-tor, 20-uy
+              Тошкент вилояти, Пискент тумани, Лола Арик
             </nav>
 
             <div className="flex items-center space-x-2   text-gray-900">
               <Call />
-              <span>+998 99 832 67 89</span>
+              <span>+998 90 942 34 99</span>
             </div>
           </div>
         </div>
