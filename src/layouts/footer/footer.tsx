@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react"
 import { Placemark, YMaps } from "@pbe/react-yandex-maps"
 import { Map } from "@pbe/react-yandex-maps"
 import { Call } from "iconsax-react"
+import Image from "next/image"
 
 type IProps = {
   id: string
@@ -56,14 +57,9 @@ const Footer = ({ id }: IProps) => {
 
           <div className="mt-9 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <div className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-5 mb-6 md:mb-0">
-              <span className="text-white font-bold text-3xl">
-                <span>
-                  <span className="bg-gradient-to-t from-[#4a4975]  to-[#FFFFFF] rounded-full text-black">
-                    N
-                  </span>
-                  <span>eruda.uz</span>
-                </span>
-              </span>
+              <div className="max-w-[100px] max-h-[80px] sm:max-w-[260px] sm:max-h-[160px]">
+                <Image src="/logo.png" width={150} height={100} alt="logo" />
+              </div>
             </div>
 
             <nav className="flex space-x-10  pb-2 sm:pb-0 text-gray-900">

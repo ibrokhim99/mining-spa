@@ -1,4 +1,5 @@
 import { HambergerMenu } from "iconsax-react"
+import Image from "next/image"
 import Link from "next/link"
 import { useParams, usePathname, useRouter } from "next/navigation"
 
@@ -22,13 +23,12 @@ export const LandingHeaderRu = () => {
       <div className="container mx-auto flex items-center justify-between px-[18px] py-5 md:px-20">
         <div className="text-2xl text-white font-bold sm:text-3xl">
           <Link href="/">
-            <span>
-              <span className="text-black">N</span>
-              <span className="text-sm">eruda.uz</span>
-            </span>
+            <div className="max-w-[100px] max-h-[80px] sm:max-w-[160px] sm:max-h-[80px]">
+              <Image src="/logo.png" width={100} height={50} alt="logo" />
+            </div>
           </Link>
         </div>
-        <nav className="flex space-x-4 text-sm ">
+        <nav className="flex space-x-4 text-sm text-white ">
           <Link href="#home" className="hidden sm:flex">
             Преимущества
           </Link>
@@ -44,7 +44,7 @@ export const LandingHeaderRu = () => {
           <Select
             defaultValue="ru"
             onValueChange={(value) => router.push(`/${value}`)}>
-            <SelectTrigger className=" border-none">
+            <SelectTrigger className="text-white border-none">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
