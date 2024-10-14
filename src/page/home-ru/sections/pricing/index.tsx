@@ -61,7 +61,7 @@ export const PricingSection = ({ id }: Props) => {
                 Клинец (0.1-0.8 mm)
               </p>
               <p className="text-center text-sm ">
-                Цена: от 135 000 сум (с НДС)
+                Цена: от 145 000 сум (с НДС)
               </p>
               <p className="text-center text-sm text-gray-400 ">
                 Цены не включают доставку

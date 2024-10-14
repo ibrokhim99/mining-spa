@@ -27,7 +27,7 @@ export const HeroSection = ({ id }: Props) => {
         <h1 className="text-2xl md:text-4xl font-bold   text-white text-center animate-slideInTop text-shadow shadow-white">
           Щебень
           <br />
-          И<br />
+          и<br />
           Клинец
         </h1>
       </div>

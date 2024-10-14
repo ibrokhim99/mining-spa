@@ -61,7 +61,7 @@ export const PricingSection = ({ id }: Props) => {
                 Klines (0.1-0.8 mm)
               </p>
               <p className="text-center text-sm ">
-                Narxi: 135 000 so`m dan(QQS bilan)
+                Narxi: 145 000 so`m dan(QQS bilan)
               </p>
               <p className="text-center text-sm text-gray-400 ">
                 Narxilar yetkazib berish xizmati hisobga olmagan{" "}

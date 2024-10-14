@@ -26,7 +26,7 @@ export const HeroSection = ({ id }: Props) => {
       <div className="container mx-auto text-center flex flex-row items-center justify-center px-[18px] lg:px-20 relative z-10">
         <h1 className="text-2xl md:text-4xl font-bold   text-white text-center animate-slideInTop text-shadow shadow-white">
           Crashed Stones <br />
-          And
+          and
           <br />
           Kilnets
         </h1>

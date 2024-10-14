@@ -61,7 +61,7 @@ export const PricingSection = ({ id }: Props) => {
                 Klines (0.1-0.8 mm)
               </p>
               <p className="text-center text-sm ">
-                Price: from 135 000 sum (including VAT)
+                Price: from 145 000 sum (including VAT)
               </p>
               <p className="text-center text-sm text-gray-400 ">
                 Prices do not include delivery.
