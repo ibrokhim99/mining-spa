@@ -38,7 +38,7 @@ export const LandingHeaderEn = () => {
           <Link href="#module" className="hidden sm:flex">
             Contacts
           </Link>
-          <Link href="tel:+998901876808">{"+998 (90) 187-68-08"}</Link>
+          <Link href="tel:+998909423499">{"+998 (90) 942-34-99"}</Link>
         </nav>
         <div className="flex flex-row items-center space-x-8">
           <Select
