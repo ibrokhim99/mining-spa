@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Host
+Host: https://neruda.uz
+
+# Sitemaps
+Sitemap: https://neruda.uz/sitemap.xml

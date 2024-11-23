@@ -12,27 +12,58 @@ import { UserAuthProvider } from "@/providers/user-auth/user-auth-provider"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://neruda.uz"),
-  title: "Neruda",
-  description: "Neruda",
+  title: {
+    default: "Neruda",
+    template: "%s - Neruda",
+  },
+  description:
+    "Explore high-quality construction and natural stones at Neruda.",
   authors: [
     {
       name: "Ibrokhim Ismoilov",
       url: "https://neruda.uz",
     },
   ],
-  icons: { icon: "/favicon.png" },
-  keywords:
-    "Tog' jinsi toshlari, Tosh konlari savdosi,Konchilik toshlari,Klinets sotib olish,Ezilgan toshlar,Qurilish toshlari,Tosh qazib olish,Minerallar va toshlar,Tabiiy toshlar,Qimmatbaho toshlar,Sheben, Klinets, Uzbekiston sheben, Toshkent sheben, Uzbekiston klinets,Toshkent klinets,Драгоценные камни,Продажа горных камней,Минеральные камни,Покупка клинкера,Дробленый камень,Камни для строительства,Горные минералы,Природные камни,Продажа клинца и камней,Драгоценные и дробленые камни, Камни Ташкент,Ташкент шебень,Ташкент клинкец",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
+  },
+  keywords: [
+    "Tog' jinsi toshlari",
+    "Tosh konlari savdosi",
+    "Konchilik toshlari",
+    "Klinets sotib olish",
+    "Ezilgan toshlar",
+    "Qurilish toshlari",
+    "Tosh qazib olish",
+    "Minerallar va toshlar",
+    "Tabiiy toshlar",
+    "Qimmatbaho toshlar",
+  ],
   openGraph: {
     title: "Neruda.uz",
-    description: "Ibrokhim Ismoilov",
+    description:
+      "Find premium natural stones, crushed rocks, and construction materials in Uzbekistan.",
     type: "website",
     url: "https://neruda.uz",
     locale: "uz_UZ",
-    images: "/mock-ielts.png",
-    countryName: "Uzbekistan",
+    images: [
+      {
+        url: "/mock-ielts.png",
+        width: 1200,
+        height: 630,
+        alt: "Neruda Stones",
+      },
+    ],
     siteName: "Neruda",
-    emails: "hello@neruda.uz",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@neruda_uz",
+    title: "Neruda",
+    description:
+      "Discover high-quality natural stones and construction materials.",
+    images: ["/mock-ielts.png"],
   },
 }
 
@@ -44,7 +75,24 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="uz">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+        <link
+          rel="preload"
+          href={inter.style.fontFamily}
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body
         className={cn(inter.className, "flex flex-col min-h-screen")}
         suppressHydrationWarning={true}>
@@ -56,6 +104,10 @@ export default function RootLayout({
             </UserAuthProvider>
           </QueryClientProvider>
         </main>
+        <Script
+          src="https://www.google-analytics.com/analytics.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
