@@ -16,7 +16,6 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 export const LandingHeaderRu = () => {
   const params = usePathname()
   const router = useRouter()
-  console.log(params)
 
   return (
     <header className="shadow-xl  rounded-b-[36px] xl:rounded-none fixed w-full top-0 z-50 bg-black bg-opacity-90 ">
